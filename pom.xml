@@ -333,7 +333,12 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${maven-war-plugin.version}</version>
                 <configuration>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <archive>
+                             <manifest>
+                                      <mainClass>com.example.Main</mainClass>
+                             </manifest>
+                    </archive>
+                    
                 </configuration>
             </plugin>
 
